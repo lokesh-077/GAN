@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  gan_app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models     # persist/inspect trained models
+      - ./images:/app/images     # persist generated images and dataset
+      - ./config:/app/config     # ensure config.yaml available
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

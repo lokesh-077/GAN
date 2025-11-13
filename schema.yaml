@@ -1,0 +1,4 @@
+CIFAR10:
+  image_size: 64
+  channels: 3
+  num_classes: 10

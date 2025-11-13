@@ -1,0 +1,8 @@
+streamlit==1.26.0
+pyyaml
+pillow
+matplotlib
+numpy
+torchvision
+pandas
+pytorch

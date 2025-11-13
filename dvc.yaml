@@ -1,0 +1,14 @@
+stages:
+  data_ingestion:
+    cmd: python main.py
+    deps:
+      - src/datascience/components/data_ingestion.py
+    outs:
+      - artifacts/data_ingestion
+
+  model_trainer:
+    cmd: python main.py
+    deps:
+      - src/datascience/components/model_trainer.py
+    outs:
+      - artifacts/model_trainer
